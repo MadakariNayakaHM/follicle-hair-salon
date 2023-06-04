@@ -1,0 +1,67 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title EPPO
+  // font awesome cdn link
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css')
+  // bootstrap cdn link
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css')
+  // custom css file link
+  link(rel='stylesheet' href='/css/style.css')
+// header section starts
+include navbar
+// header section ends
+// home section starts
+section#home.home
+  .container
+    .row.min-vh-100.align-items-center
+      .content.text-center.text-md-left
+        h3 Events do not just happen, but arrive by appointment
+        p
+          | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium itaque, quasi aliquam alias tempora voluptatibus.
+        a.btn(href='#contact') make appointment
+// home section ends
+// Appointment section starts
+section.appoint
+  h1.heading Book your appointment
+  .box-container.container
+    .box
+      img(src='/images/application/err5.jpg' alt='')
+      h3 HAIR CUTS
+      a.btn1(href='/home/haircut') make appointment
+    .box
+      img(src='/images/application/err6.jpg' alt='')
+      h3 HAIR STYLING AND CURLING
+      a.btn1(href='/home/hairstyleandcurling') make appointment
+    .box
+      img(src='/images/application/err7.jpg' alt='')
+      h3 HAIR SHAMPOO AND CONDITIONING
+      a.btn1(href='/home/hairshampooandconditioning') make appointment
+    .box
+      img(src='/images/application/err8.jpg' alt='')
+      h3 HAIR COLORING
+      a.btn1(href='/home/haircoloring') make appointment
+    .box
+      img(src='/images/application/err3.jpg' alt='')
+      h3 HAIR AND SCALP TREATMENT
+      a.btn1(href='/home/hairandscalptreatment') make appointment
+    .box
+      img(src='/images/application/err4.jpg' alt='')
+      h3 HEAD MASSAGE
+      a.btn1(href='/home/headmasage') make appointment
+    .box
+      img(src='/images/application/err4.jpg' alt='')
+      h3 SKIN CARE
+      a.btn1(href='/home/skincare') make appointment
+    .box
+      img(src='/images/application/err4.jpg' alt='')
+      h3 WAXING
+      a.btn1(href='/home/waxing') make appointment
+    .box
+      img(src='/images/application/err4.jpg' alt='')
+      h3 PEDICURE AND MENICURE
+      a.btn1(href='/home/pedicureandmanicure') make appointment
+include footer
+script(src='/js/script.js')
