@@ -18,5 +18,5 @@ Router.route('/sucsAppointment').get(viewsController.sucsAppointment);
 Router.route('/reviewAppointment/:pId/:toId/:fromId').get(authController.ristrictTo("user"),viewsController.giveReview);
 Router.route('/viewReview/:revId/').get(viewsController.viewReview);
 Router.route('/viewDash').get(viewsController.viewDashBoard);
-Router.route('/addWorker').get(viewsController.addWorker);
+Router.route('/addWorker').get(authController.ristrictTo("admin"),viewsController.addWorker);
 module.exports=Router;

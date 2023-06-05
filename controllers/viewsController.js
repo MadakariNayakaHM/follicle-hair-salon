@@ -52,7 +52,7 @@ exports.updateAppointments=async(req,res,next)=>
 }
 exports.chatbot=async(req,res,next)=>
 {
-    res.status(200).render('chatbot');
+    res.status(200).render('chatBot');
 }
 exports.available=async(req,res,next)=>
 {
