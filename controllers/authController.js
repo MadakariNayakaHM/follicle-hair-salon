@@ -46,12 +46,12 @@ exports.signUp = async (req, res, next) =>
     const token = signToken(newUser._id);
       const url=`${req.protocol}://${req.get('host')}/`
       const message=`you are added to our family 404-WEB-HACKERS click this link for login ${url}`
-    try{
-      await sendEmail({
-      email:newUser.email,
-      subject:`welcome mail from 404-WEB-HACKERS`,
-      message
-    })} catch(err){console.log("error while sending email")}
+    // try{
+    //   await sendEmail({
+    //   email:newUser.email,
+    //   subject:`welcome mail from 404-WEB-HACKERS`,
+    //   message
+    // })} catch(err){console.log("error while sending email")}
     
   
     res
@@ -78,12 +78,12 @@ module.exports.login = async (req, res, next) =>
     }
     const url=`${req.protocol}://${req.get('host')}/`
       const message=`you are added to our family WEB-DEVA click this link for interacion ${url}`
-    try{
-      await sendEmail({
-      email:user.email,
-      subject:`welcome mail from 404-WEB-HACKERS you are loged in as ${user.name}\n Interact with the farmers , dealers and analyst for more benifits`,
-      message
-    })} catch(err){console.log("error while sending email")}
+    // try{
+    //   await sendEmail({
+    //   email:user.email,
+    //   subject:`welcome mail from 404-WEB-HACKERS you are loged in as ${user.name}\n Interact with the farmers , dealers and analyst for more benifits`,
+    //   message
+    // })} catch(err){console.log("error while sending email")}
     if (user) {
       createSendToken(user, res);
       const token = signToken(user._id);
