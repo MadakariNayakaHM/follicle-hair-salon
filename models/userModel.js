@@ -23,7 +23,7 @@ const userSchema = mongoose.Schema({
   roles: {
     type: String,
     default: "user",
-    enum: ["haircut","user","hairstyleandcurling", "hairshampooandconditioning","haircoloring", "hairandscalptreatment", "headmasage","skincare","facial","waxing", "pedicureandmanicure"],
+    enum: ["haircut","user","hairstyleandcurling", "hairshampooandconditioning","haircoloring", "hairandscalptreatment", "headmasage","skincare","facial","waxing", "pedicureandmanicure","admin"],
   },
 
   status: {
