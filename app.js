@@ -6,6 +6,8 @@ const cookieParser=require('cookie-parser');
 app.use(express.json());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'js')));
+
 app.set('view engine','pug');
 app.set('views', path.join(__dirname,'views'));
 const userRoutes=require('./routers/userRoutes');
